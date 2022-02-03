@@ -19,3 +19,10 @@ resetBtn.addEventListener('click', function(){
   toDo.innerHTML = '';
   inputBox.value = '';
 })
+
+//Delete item on click
+toDo.addEventListener('click', handleClick)
+
+function handleClick(evt){
+  evt.target.parentNode.removeChild(evt.target)
+}
